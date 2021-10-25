@@ -1,6 +1,6 @@
 import os, platform
 
-def printPID(pid, os_name):
+def print_PID(pid, os_name):
     try:
         if os_name == 'Linux':
             gid = os.getgid()
@@ -13,6 +13,6 @@ def printPID(pid, os_name):
 def main():
     pid = os.getpid()
     os_name = platform.system()
-    printPID(pid, os_name)
+    print_PID(pid, os_name)
 
 main()

@@ -4,7 +4,7 @@ def get_user_input():
     file_name = input("Enter the file name: ")
     return file_name
 
-def doesFileExist(file_name):
+def does_file_exist(file_name):
   if os.path.exists(file_name):
     print(f'{file_name} exists!')
     print(os.path.abspath(file_name))  
@@ -15,6 +15,6 @@ def doesFileExist(file_name):
 
 def main():
     file_name = get_user_input()
-    doesFileExist(file_name)
+    does_file_exist(file_name)
 
 main()

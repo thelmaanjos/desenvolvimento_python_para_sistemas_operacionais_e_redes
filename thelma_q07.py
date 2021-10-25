@@ -1,7 +1,7 @@
 import os
 
-def printAbsolutePath():
+def print_absolute_path():
     path = 'thelma_q1.py'
     print('\n',os.path.abspath(path),'\n')
 
-printAbsolutePath()
+print_absolute_path()
